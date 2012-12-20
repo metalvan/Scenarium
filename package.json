@@ -12,8 +12,13 @@
   },
   
   "dependencies": {
-	"express": "2.5.x"
-},
+	"express": "latest"
+  },
+
+  "engines": {
+	  "node": "0.8.x",
+	  "npm": "1.1.x"
+  },
   
   "author": "Matthew Levin",
   "license": "BSD"
