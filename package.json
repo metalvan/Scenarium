@@ -10,6 +10,11 @@
     "type": "git",
     "url": "github.com/metalvan/Scenerium.git"
   },
+  
+  "dependencies": {
+	"express": "latest"
+}
+  
   "author": "Matthew Levin",
   "license": "BSD"
 }
