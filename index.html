@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <title>Robot Dinosaur Games</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<style type="text/css">
+	
+	
+
+	#background {
+		background-image: url('blackorchid2.jpg');
+		height: 1000px;
+		width: 1000px;
+		width: 100%;
+		height: 100%
+		z-index: -1;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	#cardfront {
+		position: absolute;
+		top: 100px;
+		left: 50%;
+		margin-left: -200px;
+		width: 400px;
+		height: 625px;
+		border: solid 10px white;
+		font-family: 'Source Sans Pro', sans-serif;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		box-shadow: -10px -8px 5px rgba(0,0,0,1);
+		font-size: 18px;
+	}
+	
+	#cardfront img {
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+	}
+	
+	h1 {
+		position: absolute;
+		top: 40%;
+		margin: auto;
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 50px;
+		color: white;
+		z-index: 100;
+	}
+	
+	#cardback {
+		display: none;
+		position: absolute;
+		top: 100px;
+		left: 50%;
+		margin-left: -200px;
+		width: 400px;
+		height: 625px;
+		border: solid 10px white;
+		font-family: 'Source Sans Pro', sans-serif;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		box-shadow: -10px -8px 5px rgba(0,0,0,1);
+		font-size: 18px;
+	}
+	
+	#cardbackcontent {
+		position: absolute;
+		z-index: 100;
+	}
+	
+	#cardback img {
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+	}
+	
+	p {
+		color: white;
+		margin: 40px 20px 40px 20px;
+		text-align: center;
+		z-index: 100;
+	}
+	
+	#emailentry {
+		display: block;
+		color: white;
+		width: 226px;
+		height: 30px;
+		margin: 20px auto 0px auto;
+		padding: 5px 5px;
+		-moz-border-radius: 8px;
+		border-radius: 8px 8px 0px 0px;
+		text-align: center;
+		border: none;
+		font-size: 13pt;
+		color: #444;
+	}
+	
+	#button {
+		display: block;
+		text-transform: uppercase;
+		text-align: center;
+		width: 210px;
+		height: 25px;
+		background: green;
+		border: solid 3px white;
+		border-top: none;
+		margin: 0 auto;
+		padding: 10px 10px 10px 10px;
+		text-decoration: none;
+		color: white;
+		-moz-border-radius: 8px;
+		border-radius: 0px 0px 8px 8px;
+	}
+	
+	#logo {
+		display: none;
+		position: fixed;
+		left: 10px;
+		bottom: 10px;
+	}
+	
+	</style>
+	
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+   </head>
+	<body>
+	
+	<div id="background"></div>
+		<section class="container">
+			<a href="#">
+			<div id="card">
+				<div id="cardfrontcontent" class="front">
+					<h1>Scenerium</h1>
+				<div id="cardbackcontent" class="back">
+					<p>Scenarium is a party game. A storytelling party game for you, you beautiful, fortunate bastard.</p>
+					<p>And right now, you can get a copy for free.</p>
+					<input type="email" name="emailentry" id="emailentry" placeholder="Your Email Goes Here">
+					<a href=# id="button">Get the Game!</a>
+					<p>Type your email in the box and I'll send you a free print-at-home copy of Scenarium. I'll email you in a few weeks to see how you liked it, and we'll make the iOS and printed versions better for everyone.</p>
+					<p>In the meantime, have fun, and thanks for playing.</p>
+					<p>-Matthew Pierce</p>
+				</div>
+				<img src="cardbg.jpg" class="back">
+			</div>
+		</section>
+	<img src="rdglogo.jpg" id="logo" width="200">
+	</body>
+	
+</html>
