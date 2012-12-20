@@ -12,7 +12,7 @@
   },
   
   "dependencies": {
-	"express": "latest"
+	"express": "2.5.x"
 },
   
   "author": "Matthew Levin",
