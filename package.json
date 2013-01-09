@@ -12,7 +12,8 @@
   },
   
   "dependencies": {
-	"express": "latest"
+	"express": "latest",
+	"nodemailer": "latest"
   },
 
   "engines": {
