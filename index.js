@@ -16,8 +16,8 @@ var sendMail = function( to, callback) {
 		from: "Scenarium < testforscenarium@gmail.com >",
 		to: to,
 		subject: "Here's Your Copy of Scenarium",
-		text: "Enjoy!",
-		html:"<b>Enjoy!!!</b>"
+		text: "Thank you good gamer, for downloading the beta print-at-home version of Scenarium.\n\nScenarium is a party game that combines the best elements of charades, draw something, and apples-to-apples.\n\nIt's a chance for 3-10 people to compete for creative supremacy as they make things up on the fly, inspired by creative commons photos, and a few unusual prompts.\n\nDownload the cards below, with backs or without (the version with backs is larger and more toner-intensive), and let me know how you like it. With your help, we're going to build both a card-based version and a mobile app version that would let you play anywhere.\n\nIf you have any questions or comments or stories of spectacular performances by you or your friends, let me know at pierce@robotdinosaurgames.com.\n\nUntil then, enjoy your game.",
+		html:"Thank you good gamer, for downloading the beta print-at-home version of Scenarium.\n\nScenarium is a party game that combines the best elements of charades, draw something, and apples-to-apples.\n\nIt's a chance for 3-10 people to compete for creative supremacy as they make things up on the fly, inspired by creative commons photos, and a few unusual prompts.\n\nDownload the cards below, with backs or without (the version with backs is larger and more toner-intensive), and let me know how you like it. With your help, we're going to build both a card-based version and a mobile app version that would let you play anywhere.\n\nIf you have any questions or comments or stories of spectacular performances by you or your friends, let me know at pierce@robotdinosaurgames.com.\n\nUntil then, enjoy your game."
 	}, callback);
 }
 
