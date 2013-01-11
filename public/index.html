@@ -227,9 +227,12 @@
 			$.ajax({
 				url:"/submit",
 				type:"POST",
-				data:"email="+email
+				data:"email="+email,
+				success: function() {
+					$('#emailconf').css('visibility', 'visible');
+				}
 			});	
-			$('#emailconf').css('visibility', 'visible');
+		
 		} );
 
 		$('#emailconfbutton').click( function() {
