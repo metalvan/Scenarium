@@ -114,7 +114,7 @@
 	
 	p {
 		color: white;
-		margin: 40px 20px 40px 20px;
+		margin: 30px 20px 30px 20px;
 		text-align: center;
 		z-index: 100;
 	}
@@ -132,6 +132,16 @@
 		border: none;
 		font-size: 13pt;
 		color: #444;
+	}
+	
+	#enjoy {
+		position: absolute;
+		top: 210px;
+		left: 172px;
+		font-size: 20px;
+		text-align: center;
+		margin: auto;
+		visibility: hidden;
 	}
 	
 	#button {
@@ -152,6 +162,46 @@
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 13pt;
 		cursor: pointer;
+	}
+	
+	#emailconf {
+		position: absolute;
+		top: 200px;
+		left: 50%;
+		margin-left: -125px;
+		width: 250px;
+		z-index: 100;
+		background: #a31815;
+		border: solid 5px white;
+		border-radius: 10px;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 13pt;
+		visibility: hidden;
+	}
+	
+	#emailconf p {
+		margin: 15px 10px;
+	}
+	
+	#emailconfbutton {
+		display: block;
+		text-transform: uppercase;
+		text-align: center;
+		height: 25px;
+		width: 130px;
+		background: green;
+		border: solid 3px white;
+		margin: 20px auto;
+		padding: 10px 10px 10px 10px;
+		text-decoration: none;
+		color: white;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 13pt;
+		cursor: pointer;
+		left: 50%;
+		left-margin: -
 	}
 	
 	#logo {
@@ -178,8 +228,14 @@
 				url:"/submit",
 				type:"POST",
 				data:"email="+email
-			})
-			
+			});	
+			$('#emailconf').css('visibility', 'visible');
+		} );
+
+		$('#emailconfbutton').click( function() {
+			$('#emailconf').css('visibility', 'hidden');
+			$('#form').css('visibility', 'hidden');
+			$('#enjoy').css('visibility', 'visible');
 		} );
 		
 		});
@@ -200,19 +256,27 @@
 						<img src="cardbg.jpg" id="cardbg">
 					</div>
 					<div id="cardbackcontent" class="back card">
-						<p>Scenarium is a party game. A party game just for you (and 2-10 of your more interesting friends).</p>
+						<p>Scenarium is a party game. A party game just for you (and 2-10 of your most interesting friends).</p>
 						<p>And right now, you can get a copy for free.</p>
 						<form action="javascript:;" id="form">
 							<input type="email" name="emailentry" id="emailentry" placeholder="Put Your Email Here" class="no-flip">
 							<input type="submit" id="button" class="no-flip" value="Get the Game!">
 						</form>
-						<p>Type your email in the box and we'll send you a free print-at-home copy of the first 50 cards of Scenarium. We'll email you in a few weeks to see how you liked it, and then we'll make it better for you.</p>
+						<p id="enjoy">ENJOY!</p>
+						<p>Type your email in the box and we'll send you a free print-at-home copy of the first 50 cards of Scenarium.</p>
+						<p>We'll email you in a few weeks to see how you liked it, and then we'll make it better for you.</p>
 						<p>In the meantime, have fun, and thanks for playing.</p>
 						<p>-The Team at Robot Dinosaur Games</p>
 						<img src="cardbackbg.jpg">
 					</div>
 				</div>
 			</section>
+			<div id="emailconf">
+				<p>Thanks!</p>
+				<p>Your copy of Scenarium is in the mail</p> 
+				<p>(although it wouldn't hurt to check the spam folder).</p>
+				<div id="emailconfbutton">I'll go play now</div>
+			</div>
 	<a href="http://www.robotdinosaurgames.com">
 		<img src="rdglogo.png" id="logo">
 	</a>
